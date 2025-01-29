@@ -22,3 +22,13 @@ def get_user_details(user_id):
         print(f"Erro ao fazer a requisição: {e}")
         return None
     
+def get_posts_by_user(user_id):
+    """Obtém os posts de um usuário específico."""
+    try:
+        response = requests.get(f"{API_URL}/posts?userId={user_id}")
+        response.raise_for_status()  # Levanta exceção para erros HTTP
+        return response.json()  # Retorna a resposta no formato JSON
+    except requests.exceptions.RequestException as e:
+        print(f"Erro ao fazer a requisição: {e}")
+        return None
+

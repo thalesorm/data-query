@@ -59,7 +59,7 @@ A aplicação foi construída em python e consome a API [JSONPlaceholder](https:
 </details>
 
 <details>
-  <summary><strong>🚀 Comno rodar o FrontEnd e a API:</strong></summary><br />
+  <summary><strong>🚀 Como rodar o FrontEnd e a API:</strong></summary><br />
 
  - Na raiz do projeto com o ambiente virtual ativado, execute o comando ```python app.py```
  - Em outro terminal acesse o diretório 'frontend' usando o comando ```cd frontend``` que encontra-se na raíz do projeto e execute os comandos:

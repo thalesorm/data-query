@@ -2,8 +2,22 @@
     "version": 2,
     "builds": [
       {
+        "src": "frontend/package.json",
+        "use": "@vercel/react"
+      },
+      {
         "src": "app.py",
         "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/app.py"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/frontend/build/$1"
       }
     ]
   }

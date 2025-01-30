@@ -34,6 +34,7 @@ A aplicação foi construída em python e consome a API JSONPlaceholder(```https
   <summary><strong>👨‍💻 Antes de começar:</strong></summary><br />
 
  - clone o repositório executando o comando: ```git clone https://github.com/thalesorm/data-query.git```
+ - Certifique-se de ter o [Python](C:\Users\Thales\Documents\python\data-query\app.py) instalado na sua máquina
  - execute no terminal: ```cd data-query``` 
  - Crie o ambiente virtual executando o comando: ```python -m venv venv```
  - Aive o ambiente virtual execute os comandos:

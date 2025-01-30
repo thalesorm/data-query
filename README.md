@@ -71,7 +71,7 @@ A aplicação foi construída em python e consome a API [JSONPlaceholder](https:
 <details>
   <summary><strong>🐳 Como rodar a aplicação com Docker:</strong></summary><br />
 
- - Certifique-se de ter o [Docker](https://www.docker.com/) instalado em sua máquina
+ - Certifique-se de ter o [Docker](https://www.docker.com/) instalado e executando em sua máquina
  - Crie uma códia do arquivo ```.env.example``` e renomei para ```.env```
  - cole o comando dentro do novo arquivo ```.env``` o seguinte comando: ```REACT_APP_BACKEND_URL=http://localhost:5000```
  - Na raiz do projeto execute o comando ```docker-compose up --build```

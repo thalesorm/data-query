@@ -4,7 +4,7 @@
 
 Uma aplicação em python que consome dados de uma API chamada [JSONPlaceholder](https://jsonplaceholder.typicode.com/) que utiliza também as bibliotecas [Pytest](https://docs.pytest.org/en/stable/) , [Flask](https://flask.palletsprojects.com/en/stable/) e tem um frontend em [React.js](https://react.dev/).
 
-A aplicação foi construída em python e consome a API JSONPlaceholder(```https://jsonplaceholder.typicode.com/```).
+A aplicação foi construída em python e consome a API [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
 
 
  <details>
@@ -13,8 +13,8 @@ A aplicação foi construída em python e consome a API JSONPlaceholder(```https
  - Consumir a API pública JSONPlaceholder para buscar dados de usuários e seus posts.
  - Exibir uma lista dos usuários com seus respectivos IDs e nomes.
  - Permitir que o usuário insira um ID de um usuário específico para:
- - Exibir o nome e o email do usuário selecionado.
- - Listar os títulos dos posts criados por esse usuário.
+   - Exibir o nome e o email do usuário selecionado.
+   - Listar os títulos dos posts criados por esse usuário.
  - Tratar erros, como:
    - ID de usuário inválido
    - Problemas de conexão com a API

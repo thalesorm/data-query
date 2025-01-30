@@ -18,12 +18,10 @@ def main():
             print("ID de usuário inválido!")
             continue
 
-        # Obtém detalhes do usuário
         user = get_user_details(user_id)
         if user:
             display_user_details(user)
 
-            # Obtém posts do usuário
             posts = get_posts_by_user(user_id)
             display_user_posts(posts)
         else:

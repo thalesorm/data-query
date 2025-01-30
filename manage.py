@@ -8,7 +8,7 @@ def run(command):
 if __name__ == "__main__":
     
     python_path = os.path.abspath("src")
-    os.environ["PYTHONPATH"] = python_path  # Define o PYTHONPATH
+    os.environ["PYTHONPATH"] = python_path
 
     if sys.argv[1] == 'install':
         run('python -m venv venv && .\\venv\\Scripts\\activate && pip install -r requirements.txt')

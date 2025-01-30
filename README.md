@@ -33,12 +33,12 @@ A aplicação foi construída em python e consome a API [JSONPlaceholder](https:
 <details>
   <summary><strong>👨‍💻 Antes de começar:</strong></summary><br />
 
- - clone o repositório executando o comando: ```git clone https://github.com/thalesorm/data-query.git```
+ - Clone o repositório executando o comando: ```git clone https://github.com/thalesorm/data-query.git```
  - Certifique-se de ter o [Python](C:\Users\Thales\Documents\python\data-query\app.py) instalado na sua máquina
- - execute no terminal: ```cd data-query```
+ - Execute no terminal: ```cd data-query```
  - Caso esteja usando Windows certifique-se de está usando o cmd *(Command Pronpt)*
  - Crie o ambiente virtual executando o comando: ```python -m venv venv```
- - Aive o ambiente virtual execute os comandos:
+ - Ative o ambiente virtual execute os comandos:
    - No windows: ```venv\Scripts\activate```
    - No macOS ou Linux: ```source venv/bin/activate```
  - Instale as dependências executando o comando: ```pip install -r requirements.txt```
@@ -51,7 +51,7 @@ A aplicação foi construída em python e consome a API [JSONPlaceholder](https:
 <details>
   <summary><strong>💅 Comandos personalizados:</strong></summary><br />
 
- - Criar, ativar o ambiente virtual e instalar as dependências: ```python manage.py instal```
+ - Criar o ambiente virtual e instalar as dependências: ```python manage.py install```
  - Para rodar a aplicação: ```python manage.py start```
 
  Observação: Dessa forma a aplicação irá rodar no terminal conforme pedem os requisitos.

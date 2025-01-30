@@ -6,17 +6,26 @@ import "./HomePage.css";
 const HomePage = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const data = await getUsers();
-      setUsers(data);
-      setLoading(false);
+      try {
+        const data = await getUsers();
+        if (data) {
+          setUsers(data);
+        }
+      } catch (err) {
+        setError("Não foi possível carregar os dados.");
+      } finally {
+        setLoading(false);
+      }
     };
     fetchUsers();
   }, []);
 
   if (loading) return <p>Carregando...</p>;
+  if (error) return <p>{error}</p>;
 
   return (
     <div>
@@ -29,14 +38,22 @@ const HomePage = () => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user) => (
-            <tr key={user.id}>
-              <td>{user.id}</td>
-              <td>
-                <Link to={`/users/${user.id}`}>{user.name}</Link>
+          {users.length > 0 ? (
+            users.map((user) => (
+              <tr key={user.id}>
+                <td>{user.id}</td>
+                <td>
+                  <Link to={`/users/${user.id}`}>{user.name}</Link>
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="2" style={{ textAlign: "center" }}>
+                Nenhum usuário encontrado. Verificou se a API está rodando?
               </td>
             </tr>
-          ))}
+          )}
         </tbody>
       </table>
     </div>

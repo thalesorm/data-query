@@ -5,19 +5,26 @@ import { Link } from "react-router-dom";
 const UserList = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const data = await getUsers();
-      if (data) {
-        setUsers(data);
+      try {
+        const data = await getUsers();
+        if (data) {
+          setUsers(data);
+        }
+      } catch (err) {
+        setError("Não foi possível carregar os dados.");
+      } finally {
+        setLoading(false);
       }
-      setLoading(false);
     };
     fetchUsers();
   }, []);
 
   if (loading) return <p>Carregando...</p>;
+  if (error) return <p>{error}</p>;
 
   return (
     <div>
@@ -30,21 +37,28 @@ const UserList = () => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user) => (
-            <tr key={user.id} style={{ backgroundColor: "#f9f9f9" }}>
-              <td style={{ padding: "12px", textAlign: "left", border: "1px solid #ddd" }}>{user.id}</td>
-              <td style={{ padding: "12px", textAlign: "left", border: "1px solid #ddd" }}>
-                <Link to={`/users/${user.id}`} style={{ color: "#333", textDecoration: "none" }}>
-                  {user.name}
-                </Link>
+          {users.length > 0 ? (
+            users.map((user) => (
+              <tr key={user.id} style={{ backgroundColor: "#f9f9f9" }}>
+                <td style={{ padding: "12px", textAlign: "left", border: "1px solid #ddd" }}>{user.id}</td>
+                <td style={{ padding: "12px", textAlign: "left", border: "1px solid #ddd" }}>
+                  <Link to={`/users/${user.id}`} style={{ color: "#333", textDecoration: "none" }}>
+                    {user.name}
+                  </Link>
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="2" style={{ textAlign: "center", padding: "12px" }}>
+                Nenhum usuário encontrado.
               </td>
             </tr>
-          ))}
+          )}
         </tbody>
       </table>
     </div>
   );
 };
-
 
 export default UserList;

@@ -39,12 +39,12 @@ A aplicação foi construída em python e consome a API [JSONPlaceholder](https:
  - Caso queria abrir o [Visual Studio Code](https://code.visualstudio.com/), execute o comando ```code .```
  - Caso esteja seu SO seja Windows certifique-se de está usando o cmd *(Command Pronpt)*
  - Crie o ambiente virtual executando o comando: ```python -m venv venv```
- - Ative o ambiente virtual execute os comandos:
+ - Ative o ambiente virtual executando os comandos:
    - No windows: ```venv\Scripts\activate```
    - No macOS ou Linux: ```source venv/bin/activate```
  - Instale as dependências executando o comando: ```pip install -r requirements.txt```
- - Para rodar a aplicação executando o comando: ```python src/main.py```
- - Para rodas os testes de integração de API executando o comando: ```set PYTHONPATH=src && pytest tests/test_api_service.py```
+ - Para rodar a aplicação execute o comando: ```python src/main.py```
+ - Para rodar os testes de integração de API execute o comando: ```set PYTHONPATH=src && pytest tests/test_api_service.py```
 
  Observação: Dessa forma a aplicação irá rodar no terminal conforme pedem os requisitos.
 </details>

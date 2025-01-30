@@ -11,7 +11,10 @@ def main():
     display_users(users)
 
     user_id = get_user_input()
+    print(f"ID do usuário: {user_id}") 
+
     if user_id is None:
+        print("ID de usuário inválido!")
         return
 
     # Obtém detalhes do usuário

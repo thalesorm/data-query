@@ -33,10 +33,11 @@ A aplicação foi construída em python e consome a API [JSONPlaceholder](https:
 <details>
   <summary><strong>👨‍💻 Antes de começar:</strong></summary><br />
 
- - Clone o repositório executando o comando: ```git clone https://github.com/thalesorm/data-query.git```
+ - No seu terminal, clone o repositório executando o comando: ```git clone https://github.com/thalesorm/data-query.git```
  - Certifique-se de ter o [Python](C:\Users\Thales\Documents\python\data-query\app.py) instalado na sua máquina
  - Execute no terminal: ```cd data-query```
- - Caso esteja usando Windows certifique-se de está usando o cmd *(Command Pronpt)*
+ - Caso queria abrir o [Visual Studio Code](https://code.visualstudio.com/), execute o comando ```code .```
+ - Caso esteja seu SO seja Windows certifique-se de está usando o cmd *(Command Pronpt)*
  - Crie o ambiente virtual executando o comando: ```python -m venv venv```
  - Ative o ambiente virtual execute os comandos:
    - No windows: ```venv\Scripts\activate```

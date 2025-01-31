@@ -28,6 +28,7 @@ https://data-querty-app.vercel.app/
  - Testes de Integração para a API utilizando pytest
  - API para ser consumida
  - Frontend em React
+ - [Deploy]() da aplicação usando [Vercel](https://vercel.com/)
 </details>
 
 ## Orientações

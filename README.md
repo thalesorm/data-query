@@ -6,6 +6,8 @@ Uma aplicação em python que consome dados de uma API chamada [JSONPlaceholder]
 
 A aplicação foi construída em python e consome a API [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
 
+O Deploy da aplicação foi feito no vercel e pode ser acessado no seguinte link: 
+https://data-querty-app.vercel.app/
 
  <details>
   <summary><strong>📝 Os requisitos são:</strong></summary><br />
